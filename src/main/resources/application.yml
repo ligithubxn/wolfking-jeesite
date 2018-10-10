@@ -59,3 +59,10 @@ page:
 #文件上传的路径
 userfiles:
   basedir: /data/jeesite/upload
+
+spring.application.name: wolfking-jeesite-spring-boot
+spring.http.encoding: { charset: UTF-8, enable: true, force: true }
+productName: wolfking-jeesite-平台
+version: wolfking-jeesite-1.0
+web.staticFile: .css,.js,.png,.jpg,.gif,.jpeg,.bmp,.ico,.swf,.psd,.htc,.htm,.html,.crx,.xpi,.exe,.ipa,.apk
+demoMode: false

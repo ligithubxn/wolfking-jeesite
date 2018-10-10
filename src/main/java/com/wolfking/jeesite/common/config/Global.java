@@ -37,7 +37,7 @@ public class Global {
     /**
      * 属性文件加载对象
      */
-    private static PropertiesLoader loader = new PropertiesLoader("bootstrap.yml");
+    private static PropertiesLoader loader = new PropertiesLoader(System.getProperty("spring.config.location") == null ? "application.yml" : System.getProperty("spring.config.location"));
 
     /**
      * 是/否
