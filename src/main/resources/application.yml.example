@@ -13,11 +13,14 @@ server:
       suffix: .log
       request-attributes-enabled: true
       rename-on-rotate: true
+
 logging:
+  file: ./logs/wolfking-jeesite
   level:
     root: INFO
-    com.woflking: DEBUG
+    com.woflking.jeesite: DEBUG
     org.apache.shiro.cache.ehcache.EhCacheManager: WARN
+
 spring:
   #数据库的配置
   datasource:
@@ -66,3 +69,5 @@ productName: wolfking-jeesite-平台
 version: wolfking-jeesite-1.0
 web.staticFile: .css,.js,.png,.jpg,.gif,.jpeg,.bmp,.ico,.swf,.psd,.htc,.htm,.html,.crx,.xpi,.exe,.ipa,.apk
 demoMode: false
+
+#spring.mvc.static-path-pattern: /static/**
